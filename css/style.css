@@ -9,6 +9,14 @@ img {
     width: 100%;
 }
 
+.cabezallogo {
+    padding-top: 12px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 6px;
+    }
+
 .card {
     position: relative;
     width: 100%;
@@ -54,12 +62,32 @@ img {
     /* cursor: pointer; */
 }
 
+.titulo {
+    padding-bottom: 30px;
+
+}
+
+.bajada h6 {
+    font-size: 19px;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5c5c5c;
+    position: relative;
+    padding-bottom: 30px;
+    letter-spacing: -.5px;
+}
+
 .texto {
     color: black;
     width: 100%;
     padding: 15px;
     z-index: 10;
 }
+
+h1 {font-family: suecaslabmedium;
+    font-size: 40px;
+    line-height: 45px;
+    }
 
 h2 {
     font-family: suecaslabbold, sans-serif;
@@ -79,6 +107,13 @@ h3 {
 
 }
 
+h5 {font-family: arial;
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+
 p {
     font-family: suecaslabmedium, sans-serif;
     font-size: 17px;
@@ -89,6 +124,11 @@ p {
 
 b {
     font-family: suecaslabbold, sans-serif;
+}
+
+.container-nota {
+    margin: 20px;;
+
 }
 
 .container {
