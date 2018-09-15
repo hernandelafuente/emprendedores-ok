@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="http://especiales.lanacion.com.ar/multimedia/proyectos/fonts/font.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -46,7 +47,9 @@
 
         <!-- Bajada -->
         <div class="bajada">
-            <h6>Más allá del estereotipo del entrepreneur palermitano, cada vez más bonaerenses del segundo y tercer cordón del GBA se lanzan con sus proyectos productivos; el desafío de crecer y desarrollarse en un contexto menos favorable</h6>
+            <h6>Más allá del estereotipo del entrepreneur palermitano, cada vez más bonaerenses del segundo y tercer
+                cordón del GBA se lanzan con sus proyectos productivos; el desafío de crecer y desarrollarse en un
+                contexto menos favorable</h6>
         </div>
 
         <!-- Firma -->
@@ -57,7 +60,8 @@
 
                     María Julieta Rumi</a>
                 <a href="https://twitter.com/julyrumi" title="María Julieta Rumi en Twitter">
-                    <button class="seguir" data-dldescripcion="Hugo Alconada Mon" data-preferibleid="97" data-preferibletipoid="6">SEGUIR</button>
+                    <button class="seguir" data-dldescripcion="Hugo Alconada Mon" data-preferibleid="97"
+                        data-preferibletipoid="6">SEGUIR</button>
                 </a>
             </h4>
         </div>
@@ -74,7 +78,7 @@
     <div class="container">
 
         <!-- francisco ugarte -->
-        <div class="card">
+        <a class="card" href="#ugarte" rel="modal:open">
             <img src="img/francisco-ugarte1.jpg" alt="">
 
             <div class="descripcion">
@@ -89,10 +93,15 @@
                         <b>Origen:</b> Quilmes</p>
                 </div>
             </div>
+        </a>
+        <!-- ventana modal Ugarte -->
+        <div id="ugarte" class="modal">
+            <p>Francisco Ugarte</p>
+            <a href="#" rel="modal:close">Cerrar</a>
         </div>
 
         <!-- gustavo rodriguez -->
-        <div class="card">
+        <a class="card" href="#rodriguez" rel="modal:open">
             <img src="img/gustavo-rodriguez1.jpg" alt="">
             <div class="descripcion">
                 <div class="texto">
@@ -106,7 +115,13 @@
                         <b>Origen:</b> Lanús</p>
                 </div>
             </div>
+        </a>
+        <!-- ventana modal Rodriguez -->
+        <div id="rodriguez" class="modal">
+            <p>Gustavo Rodriguez</p>
+            <a href="#" rel="modal:close">Cerrar</a>
         </div>
+
 
         <!-- javier tibi -->
         <div class="card">
@@ -178,7 +193,11 @@
     </div>
 
 
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 </body>
 
 </html>
