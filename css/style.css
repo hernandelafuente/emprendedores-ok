@@ -41,35 +41,33 @@ img {
     background-color: white;
     z-index: 9;
     opacity: 0.8;
-    transform: translateY(51%);
-    transition: all;
-    transition-duration: .5s;
-    transition-timing-function: ease;
+    /* transform: translateY(51%); */
+    transition: max-height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+
+    max-height: 80px;
 }
 
 .card:hover .descripcion {
     bottom: 0;
-    transform: translateY(0);
-    opacity: 0.8;
+    max-height: 1000px;
+    /* transform: translateY(0); */
+    /* opacity: 0.8; */
 }
-
-/* estilo para mobile */
-@media (max-width: 733px) {
-    .descripcion {
-        position: static;
-        transform: translateY(0);
-        opacity: 1;
-        width: 100%;
-    }
-
-    .texto {
-        padding: 10px 0px;
-    }
-
-    html {
-        font-size: 13px;
-    }
-    }
+.masmodal {
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	line-height: .6;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
 
 .container {
     display: grid;
@@ -172,4 +170,26 @@ h4 {
 
 .jquery-modal.blocker.current {
     z-index: 100;
+}
+
+/* estilo para mobile */
+@media (max-width: 733px) {
+    .descripcion {
+        position: relative;
+        /* transform: translateY(0); */
+        opacity: 1;
+        width: 100%;
+        max-height: none;
+    }
+
+    .texto {
+        padding: 10px 0px;
+    }
+    .masmodal {
+        display: none;
+    }
+
+    html {
+        font-size: 13px;
+    }
 }
